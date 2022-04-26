@@ -14,7 +14,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 var grid = new THREE.GridHelper(size,divisions);
-scene.add(grid);
+//scene.add(grid);
 
 
 var controls = new THREE.OrbitControls(camera,renderer.domElement);
@@ -31,7 +31,7 @@ loader.load('models/shiba/shiba.gltf', ( gltf ) =>{
         requestAnimationFrame(animateScale);
 
         console.log(shibaMod.scale.x);
-
+/*
         if(shibaMod.scale.x < 3 && isGrowing){
         shibaMod.scale.x += 0.002;
         shibaMod.scale.z += 0.002;
@@ -42,13 +42,13 @@ loader.load('models/shiba/shiba.gltf', ( gltf ) =>{
             }
         }
         else if(shibaMod.scale.x > 0.5 && !isGrowing) {
-            shibaMod.scale.x -= 0.002;
-            shibaMod.scale.z -= 0.002;
-            shibaMod.scale.y -= 0.002;
-            if(shibaMod.scale.x < 0.5){
-                isGrowing = !isGrowing;
-            }
-        }
+          //  shibaMod.scale.x -= 0.002;
+           // shibaMod.scale.z -= 0.002;
+           // shibaMod.scale.y -= 0.002;
+           // if(shibaMod.scale.x < 0.5){
+            //    isGrowing = !isGrowing;
+           // }
+        }*/
     }
     animateScale();
 } );
